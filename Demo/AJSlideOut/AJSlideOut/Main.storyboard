@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slide Out View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AJSlideOutViewController" customModule="Bitcoin_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="127"/>
+        </scene>
+        <!--Center View Controller-->
+        <scene sceneID="2jJ-ma-N12">
+            <objects>
+                <viewController storyboardIdentifier="CenterScreenVC" id="EUs-tS-grD" customClass="CenterViewController" customModule="Bitcoin_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6k9-ML-Pqi"/>
+                        <viewControllerLayoutGuide type="bottom" id="9jo-hy-5ZB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h5G-b2-nNd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CENTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLr-tN-4FQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sm4-Br-faz">
+                                <state key="normal" title="SLIDE"/>
+                                <connections>
+                                    <action selector="slideOut:" destination="EUs-tS-grD" eventType="touchUpInside" id="j3z-GZ-jtm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oLr-tN-4FQ" firstAttribute="leading" secondItem="h5G-b2-nNd" secondAttribute="leading" constant="166" id="4VV-1q-jpd"/>
+                            <constraint firstItem="oLr-tN-4FQ" firstAttribute="centerY" secondItem="h5G-b2-nNd" secondAttribute="centerY" id="Wax-2i-yTd"/>
+                            <constraint firstItem="Sm4-Br-faz" firstAttribute="leading" secondItem="h5G-b2-nNd" secondAttribute="leadingMargin" constant="3" id="ZQt-Oa-90r"/>
+                            <constraint firstItem="Sm4-Br-faz" firstAttribute="top" secondItem="6k9-ML-Pqi" secondAttribute="bottom" id="qUg-Ul-bha"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8W7-gs-xTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655" y="79"/>
+        </scene>
+        <!--Left View Controller-->
+        <scene sceneID="loA-oc-BWV">
+            <objects>
+                <viewController storyboardIdentifier="ScreenLeftVC" id="7Cc-hh-Hsq" customClass="LeftViewController" customModule="Bitcoin_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fjs-L2-tqr"/>
+                        <viewControllerLayoutGuide type="bottom" id="MXU-c2-Ffm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="12b-27-ahc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAO-nf-5LA">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SAO-nf-5LA" firstAttribute="leading" secondItem="12b-27-ahc" secondAttribute="leading" constant="166" id="NED-Dc-Z1t"/>
+                            <constraint firstItem="SAO-nf-5LA" firstAttribute="centerY" secondItem="12b-27-ahc" secondAttribute="centerY" id="jmD-eC-gp9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xld-Fd-nXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337" y="105"/>
+        </scene>
+    </scenes>
+</document>
